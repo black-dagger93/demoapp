@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("testing/api")
-class TestingController {
+@RequestMapping("kotlin/api")
+class KotlinTestingController {
 
     @GetMapping
-    fun testing() = "hello"
+    fun testing() = "kotlin"
 
     @GetMapping("/error")
     fun error() {

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  DD_GIT_REPOSITORY_URL: "https://github.com/black-dagger93/demoapp"
+  DD_GIT_COMMIT_SHA: "dc8640d1f222cdb100d1ddfd2747d255e0a1b266"
