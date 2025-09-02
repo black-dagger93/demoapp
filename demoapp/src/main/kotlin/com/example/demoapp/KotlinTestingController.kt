@@ -13,7 +13,7 @@ class KotlinTestingController {
 
     @GetMapping("/error")
     fun error() {
-        throw Exception("this is a test")
+        throw RuntimeException("this is a test")
     }
 
     @GetMapping("/math-error")

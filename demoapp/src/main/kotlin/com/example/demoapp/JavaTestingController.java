@@ -14,8 +14,8 @@ public class JavaTestingController {
     }
 
     @GetMapping("/error")
-    void error() throws Exception {
-        throw new Exception("this is a test");
+    void error() {
+        throw new RuntimeException("this is a test");
     }
 
     @GetMapping("/math-error")
